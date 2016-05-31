@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="SlidingPuzzle.PuzzleBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SlidingPuzzle"
+             mc:Ignorable="d" 
+             d:DesignHeight="259" d:DesignWidth="263">
+    <Grid HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4" />
+            <RowDefinition Height="47" />
+            <RowDefinition Height="4" />
+            <RowDefinition Height="47" />
+            <RowDefinition Height="4" />
+            <RowDefinition Height="47" />
+            <RowDefinition Height="4" />
+            <RowDefinition Height="47" />
+            <RowDefinition Height="4" />
+            <RowDefinition Height="47" />
+            <RowDefinition Height="4" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6"/>
+            <ColumnDefinition Width="47" />
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition Width="47" />
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition Width="47" />
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition Width="47" />
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition Width="47" />
+            <ColumnDefinition Width="6"/>
+        </Grid.ColumnDefinitions>
+        
+        <Rectangle Grid.Column="0" Grid.ColumnSpan="11" Grid.Row="0" Grid.RowSpan="12" Fill="DarkGreen" />
+        <Image x:Name="ImgTest" Grid.Column="1" Grid.ColumnSpan="9" Grid.Row="1" Grid.RowSpan="9" />
+        <Image x:Name="ImgSquare1" Grid.Column="1" Grid.Row="1" />
+        <Image x:Name="ImgSquare2" Grid.Column="3" Grid.Row="1" />
+        <Image x:Name="ImgSquare3" Grid.Column="5" Grid.Row="1" />
+        <Image x:Name="ImgSquare4" Grid.Column="7" Grid.Row="1" />
+        <Image x:Name="ImgSquare5" Grid.Column="9" Grid.Row="1" />
+        <Image x:Name="ImgSquare6" Grid.Column="1" Grid.Row="3" />
+        <Image x:Name="ImgSquare7" Grid.Column="3" Grid.Row="3" />
+        <Image x:Name="ImgSquare8" Grid.Column="5" Grid.Row="3" />
+        <Image x:Name="ImgSquare9" Grid.Column="7" Grid.Row="3" />
+        <Image x:Name="ImgSquare10" Grid.Column="9" Grid.Row="3" />
+        <Image x:Name="ImgSquare11" Grid.Column="1" Grid.Row="5" />
+        <Image x:Name="ImgSquare12" Grid.Column="3" Grid.Row="5" />
+        <Image x:Name="ImgSquare13" Grid.Column="5" Grid.Row="5" />
+        <Image x:Name="ImgSquare14" Grid.Column="7" Grid.Row="5" />
+        <Image x:Name="ImgSquare15" Grid.Column="9" Grid.Row="5" />
+        <Image x:Name="ImgSquare16" Grid.Column="1" Grid.Row="7" />
+        <Image x:Name="ImgSquare17" Grid.Column="3" Grid.Row="7" />
+        <Image x:Name="ImgSquare18" Grid.Column="5" Grid.Row="7" />
+        <Image x:Name="ImgSquare19" Grid.Column="7" Grid.Row="7" />
+        <Image x:Name="ImgSquare20" Grid.Column="9" Grid.Row="7" />
+        <Image x:Name="ImgSquare21" Grid.Column="1" Grid.Row="9" />
+        <Image x:Name="ImgSquare22" Grid.Column="3" Grid.Row="9" />
+        <Image x:Name="ImgSquare23" Grid.Column="5" Grid.Row="9" />
+        <Image x:Name="ImgSquare24" Grid.Column="7" Grid.Row="9" />
+        <Image x:Name="ImgSquare25" Grid.Column="9" Grid.Row="9" />
+    </Grid>
+</UserControl>

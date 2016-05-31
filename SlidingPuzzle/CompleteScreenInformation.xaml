@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="SlidingPuzzle.CompleteScreenInformation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SlidingPuzzle"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="263">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12" />
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="60" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Right" Content="Your Time:" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="#FFFFD292" FontSize="15"/>
+        <Label x:Name="LblTime" Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" Content="00:00" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="#FFC14F00" FontSize="15"/>
+        <Image x:Name="ImgTimeHiScore" Grid.Row="0" Grid.Column="8" Source="Resources/HiScore_Image.png" />
+        <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Right" Content="Moves Taken:" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="#FFFFD292" FontSize="15"/>
+        <Label x:Name="LblMoves" Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" Content="0" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="#FFC14F00" FontSize="15"/>
+        <Image x:Name="ImgMovesHiScore" Grid.Row="2" Grid.Column="8" Source="Resources/HiScore_Image.png" />
+        <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="10" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Enter your name:" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="#FFFFD292" FontSize="15"/>
+        <TextBox x:Name="TxtBxName" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="" FontFamily="Consolas" FontWeight="ExtraBold" Foreground="#FF23190A" FontSize="15" TextChanged="TxtBxName_TextChanged"/>
+        <Image x:Name="ImgSubmit" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="3" Source="Resources/Submit_Button_Disabled.png" Stretch="Fill" MouseEnter="ImgSubmit_MouseEnter" MouseLeave="ImgSubmit_MouseLeave"/>
+    </Grid>
+</UserControl>

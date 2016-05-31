@@ -1,0 +1,16 @@
+﻿<Window x:Class="SlidingPuzzle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlidingPuzzle"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="418" Width="275" ResizeMode="CanMinimize">
+    <Grid>
+        <local:TitleScreen x:Name="UsrCntrlTitleScreen" />
+        <local:HowToPlayScreen x:Name="UsrCntrlHowToPlayScreen" IsEnabled="False" Visibility="Hidden" />
+        <local:GameScreen x:Name="UsrCntrlGameScreen" IsEnabled="False" Visibility="Hidden" />
+        <local:CompleteScreen x:Name="UsrCntrlCompleteScreen" IsEnabled="False" Visibility="Hidden" />
+        <local:HiScoresScreen x:Name="UsrCntrlHiScoresScreen" IsEnabled="False" Visibility="Hidden" />
+    </Grid>
+</Window>
